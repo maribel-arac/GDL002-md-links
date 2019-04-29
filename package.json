@@ -1,4 +1,42 @@
 {
   "name": "md-links",
-  "version": "0.1.0"
+  "version": "0.1.0",
+  "description": "## Preámbulo",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+
+  "jest": {
+    "transform": {
+      "^.+\\.jsx?$": "babel-jest"
+    },
+    "transformIgnorePatterns": [
+      "/node_modules/(?!test-component).+\\.js$"
+    ]
+  },
+
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maribel-arac/GDL002-md-links.git"
+  },
+  "keywords": [
+    "md-links"
+  ],
+  "author": "Maribel Araiza",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maribel-arac/GDL002-md-links/issues"
+  },
+  "homepage": "https://github.com/maribel-arac/GDL002-md-links#readme",
+  "devDependencies": {
+    "@babel/preset-env": "^7.4.3",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.17.1",
+    "jest": "^24.7.1"
+  }
 }
