@@ -7,9 +7,8 @@
     "test": "test"
   },
   "scripts": {
-    "test": "jest"
+    "test": "jest --coverage --colors"
   },
-
   "jest": {
     "transform": {
       "^.+\\.jsx?$": "babel-jest"
@@ -18,7 +17,6 @@
       "/node_modules/(?!test-component).+\\.js$"
     ]
   },
-
   "repository": {
     "type": "git",
     "url": "git+https://github.com/maribel-arac/GDL002-md-links.git"
@@ -38,5 +36,8 @@
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.17.1",
     "jest": "^24.7.1"
+  },
+  "dependencies": {
+    "mariabp-md-links": "^0.1.1"
   }
 }

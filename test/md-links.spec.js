@@ -1,4 +1,5 @@
 const mdLinks = require('../index.js');
+const readFile = require('../links.js');
 
 
 describe('mdLinks', () => {
@@ -32,20 +33,20 @@ describe('mdExtension', () => {
 	});
 });
 
-describe('readFileMD', () => {
-	it("Should read the file", () => {
-		expect(mdLinks.readFileMd("prueba.md")).toBe(true);
+describe('readFileResult', () => {
+	it("is an object", () => {
+		expect(typeof mdLinks.readFileResult("./prueba.md")).toBe('object');
 	});
 });
 
-describe('containsMdLinks', () => {
-	it('should be a function', () => {
-		expect(typeof mdLinks.containsMdLinks).toBe('function');
-	});
-})
+// describe('containsMdLinks', () => {
+// 	it('should be a function', () => {
+// 		expect(typeof mdLinks.containsMdLinks).toBe('function');
+// 	});
+// })
 
-describe("urlify", () =>{
-  it("Should be true", ()=> {
-    expect(mdLinks.urlify("./README.md")).toBe(htmlLinks);
-  });
-});
+// describe("urlify", () =>{
+//   it("Should be true", ()=> {
+//     expect(mdLinks.urlify("./README.md")).toBe(htmlLinks);
+//   });
+// });
